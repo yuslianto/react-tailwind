@@ -1,7 +1,7 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       {/* navbar */}
       <Navbar />
       {/* content */}
-      {/* <HomePage /> */}
+      <HomePage />
       {/* footer */}
       {/* <Footer /> */}
     </>
