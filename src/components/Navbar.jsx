@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -7,13 +7,13 @@ const Navbar = () => {
   const handleClik = () => {
     // setShow(true);
     setShow(!show);
-    console.log("testing", show);
+    console.log('testing', show);
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       if (window.scrollY > 5) {
-        console.log("scroll", scroll);
+        console.log('scroll', scroll);
         setScroll(true);
         setShow(false);
       } else {
@@ -22,9 +22,9 @@ const Navbar = () => {
     });
   });
 
-  let scrollActive = scroll ? "py-6 bg-white shadow" : "py-4";
+  let scrollActive = scroll ? 'py-6 bg-white shadow' : 'py-4';
 
-  let menuActive = show ? "left-0" : "-left-full";
+  let menuActive = show ? 'left-0' : '-left-full';
   // let menuActive = show
   //   ? "translate-x-0 opacity-100"
   //   : "-translate-x-full opacity-0";
@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="navbar-box flex items-center justify-between">
           <div className="logo">
-            <h1 className="text-2xl font-bold">Logo</h1>
+            <h1 className="text-2xl font-bold">Fun#Code</h1>
           </div>
           <ul
             className={`flex lg:gap-12 md:static md:flex-row md:bg-transparent md:w-auto md:h-full md:translate-y-0 md:text-black md:shadow-none md:p-0 md:m-0 md:transition-none gap-8 fixed ${menuActive} top-1/2 -translate-y-1/2 flex-col px-8 py-6 rounded shadow-lg shadow-slate-300 bg-sky-400 text-white transition-all`}
