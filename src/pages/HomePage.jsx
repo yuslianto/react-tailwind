@@ -2,6 +2,11 @@ import React from "react";
 
 import HeroImage from "../assets/images/hero.svg";
 import AboutImage from "../assets/images/about.svg";
+import Proyek1 from "../assets/images/proyek-1.webp";
+import Proyek2 from "../assets/images/proyek-2.webp";
+import Proyek3 from "../assets/images/proyek-3.webp";
+import Proyek4 from "../assets/images/proyek-4.webp";
+import Proyek5 from "../assets/images/proyek-5.webp";
 
 const HomePage = () => {
   return (
@@ -105,6 +110,59 @@ const HomePage = () => {
               <p className="text-white text-base/loose">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
                 fuga veniam illum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Proyek Section */}
+        <div className="proyek pt-32">
+          <h1 className="text-center lg:text-5xl/tight text-3xl font-medium mb-2">
+            Proyek
+          </h1>
+          <p className="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, eius!
+          </p>
+          <div className="proyek-box pt-12 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+            <div className="box bg-white rounded-md shadow p-2">
+              <img src={Proyek1} alt="Proyek 1" className="w-full h-[200px]" />
+              <h3 className="text-xl font-bold mt-6 mb-2">Proyek Name 1</h3>
+              <p className="text-base/loose">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                itaque porro? Saepe possimus quo neque!
+              </p>
+            </div>
+            <div className="box bg-white rounded-md shadow p-2">
+              <img src={Proyek2} alt="Proyek 2" className="w-full h-[200px]" />
+              <h3 className="text-xl font-bold mt-6 mb-2">Proyek Name 2</h3>
+              <p className="text-base/loose">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                itaque porro? Saepe possimus quo neque!
+              </p>
+            </div>
+            <div className="box bg-white rounded-md shadow p-2">
+              <img src={Proyek3} alt="Proyek 3" className="w-full h-[200px]" />
+              <h3 className="text-xl font-bold mt-6 mb-2">Proyek Name 3</h3>
+              <p className="text-base/loose">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                itaque porro? Saepe possimus quo neque!
+              </p>
+            </div>
+            <div className="box bg-white rounded-md shadow p-2">
+              <img src={Proyek4} alt="Proyek 4" className="w-full h-[200px]" />
+              <h3 className="text-xl font-bold mt-6 mb-2">Proyek Name 4</h3>
+              <p className="text-base/loose">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                itaque porro? Saepe possimus quo neque!
+              </p>
+            </div>
+            <div className="box bg-white rounded-md shadow p-2">
+              <img src={Proyek5} alt="Proyek 5" className="w-full h-[200px]" />
+              <h3 className="text-xl font-bold mt-6 mb-2">Proyek Name 5</h3>
+              <p className="text-base/loose">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                itaque porro? Saepe possimus quo neque!
               </p>
             </div>
           </div>
