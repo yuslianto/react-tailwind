@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import HeroImage from '../assets/images/hero.svg';
-import AboutImage from '../assets/images/about.svg';
+import HeroImage from "../assets/images/hero.svg";
+import AboutImage from "../assets/images/about.svg";
 
 const HomePage = () => {
   return (
@@ -11,9 +11,9 @@ const HomePage = () => {
         <div className="hero grid md:grid-cols-2 grid-cols-1 items-center gap-20 pt-32">
           <div className="box">
             <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7">
-              Belajar membuat website dengan{' '}
-              <span className="text-sky-400 font-bold underline">React JS</span>{' '}
-              dan{' '}
+              Belajar membuat website dengan{" "}
+              <span className="text-sky-400 font-bold underline">React JS</span>{" "}
+              dan{" "}
               <span className="text-sky-400 font-bold underline">
                 Tailwind CSS
               </span>
@@ -41,7 +41,7 @@ const HomePage = () => {
         </div>
 
         {/* About Section */}
-        <div className="about grid md:grid-cols-2 grid-cols-1 items-center gap-20 pt-32 md:pt-20">
+        <div className="about grid md:grid-cols-2 grid-cols-1 items-center md:gap-20 gap-10 pt-32 md:pt-20">
           <div className="box md:order-1 order-2">
             <img
               src={AboutImage}
@@ -51,9 +51,9 @@ const HomePage = () => {
           </div>
           <div className="box md:order-2 order-1">
             <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7">
-              Belajar membuat website dengan{' '}
-              <span className="text-sky-400 font-bold underline">React JS</span>{' '}
-              dan{' '}
+              Belajar membuat website dengan{" "}
+              <span className="text-sky-400 font-bold underline">React JS</span>{" "}
+              dan{" "}
               <span className="text-sky-400 font-bold underline">
                 Tailwind CSS
               </span>
@@ -64,6 +64,49 @@ const HomePage = () => {
               non? Quod modi dolore ex enim? Mollitia dicta officia nemo enim
               similique.
             </p>
+          </div>
+        </div>
+
+        {/* Layanan Section */}
+        <div className="services pt-32">
+          <h1 className="text-center lg:text-5xl/tight text-3xl font-medium mb-2">
+            Layanan
+          </h1>
+          <p className="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, eius!
+          </p>
+          <div className="services-box pt-12 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+            <div className="box bg-sky-400 rounded-lg shadow p-4">
+              <i className="ri-number-1 text-3xl text-white"></i>
+              <h3 className="text-xl font-bold text-white mt-6 mb-2">
+                Services Name 1
+              </h3>
+              <p className="text-white text-base/loose">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+                fuga veniam illum.
+              </p>
+            </div>
+            <div className="box bg-sky-400 rounded-lg shadow p-4">
+              <i className="ri-number-2 text-3xl text-white"></i>
+              <h3 className="text-xl font-bold text-white mt-6 mb-2">
+                Services Name 2
+              </h3>
+              <p className="text-white text-base/loose">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+                fuga veniam illum.
+              </p>
+            </div>
+            <div className="box bg-sky-400 rounded-lg shadow p-4">
+              <i className="ri-number-3 text-3xl text-white"></i>
+              <h3 className="text-xl font-bold text-white mt-6 mb-2">
+                Services Name 3
+              </h3>
+              <p className="text-white text-base/loose">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+                fuga veniam illum.
+              </p>
+            </div>
           </div>
         </div>
       </div>
