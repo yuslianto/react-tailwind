@@ -11,7 +11,7 @@ function App() {
       {/* content */}
       <HomePage />
       {/* footer */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

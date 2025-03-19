@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -7,13 +7,13 @@ const Navbar = () => {
   const handleClik = () => {
     // setShow(true);
     setShow(!show);
-    console.log('testing', show);
+    console.log("testing", show);
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (window.scrollY > 5) {
-        console.log('scroll', scroll);
+        console.log("scroll", scroll);
         setScroll(true);
         setShow(false);
       } else {
@@ -22,9 +22,9 @@ const Navbar = () => {
     });
   });
 
-  let scrollActive = scroll ? 'py-6 bg-white shadow' : 'py-4';
+  let scrollActive = scroll ? "py-6 bg-white shadow" : "py-4";
 
-  let menuActive = show ? 'left-0' : '-left-full';
+  let menuActive = show ? "left-0" : "-left-full";
   // let menuActive = show
   //   ? "translate-x-0 opacity-100"
   //   : "-translate-x-full opacity-0";
@@ -40,38 +40,38 @@ const Navbar = () => {
           >
             <li className="flex items-center gap-3">
               <i className="ri-home-2-line text-3xl md:hidden block"></i>
-              <a href="" className="font-medium opacity-75">
+              <a href="#home" className="font-medium opacity-75">
                 Beranda
               </a>
             </li>
             <li className="flex items-center gap-3">
               <i className="ri-customer-service-2-line text-3xl md:hidden block"></i>
-              <a href="" className="font-medium opacity-75">
+              <a href="#about" className="font-medium opacity-75">
                 Tentang Kami
               </a>
             </li>
             <li className="flex items-center gap-3">
               <i className="ri-settings-2-line text-3xl md:hidden block"></i>
-              <a href="" className="font-medium opacity-75">
+              <a href="#services" className="font-medium opacity-75">
                 Layanan
               </a>
             </li>
             <li className="flex items-center gap-3">
               <i className="ri-image-line text-3xl md:hidden block"></i>
-              <a href="" className="font-medium opacity-75">
+              <a href="#proyek" className="font-medium opacity-75">
                 Proyek
               </a>
             </li>
             <li className="flex items-center gap-3">
               <i className="ri-contacts-book-2-line text-3xl md:hidden block"></i>
-              <a href="" className="font-medium opacity-75">
+              <a href="#social-link" className="font-medium opacity-75">
                 Kontak
               </a>
             </li>
           </ul>
           <div className="social flex items-center gap-2">
             <a
-              href=""
+              href="#social-link"
               className="bg-sky-400 px-5 py-2 rounded-full text-white font-bold hover:bg-sky-500 transition-all"
             >
               Social Media
