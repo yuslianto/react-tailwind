@@ -7,6 +7,7 @@ import Proyek2 from "../assets/images/proyek-2.webp";
 import Proyek3 from "../assets/images/proyek-3.webp";
 import Proyek4 from "../assets/images/proyek-4.webp";
 import Proyek5 from "../assets/images/proyek-5.webp";
+import ContactImage from "../assets/images/contact.png";
 
 const HomePage = () => {
   return (
@@ -167,6 +168,79 @@ const HomePage = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
                 itaque porro? Saepe possimus quo neque!
               </p>
+            </div>
+            <div className="box bg-white rounded-md shadow p-2">
+              <img src={Proyek4} alt="Proyek 6" className="w-full h-[200px]" />
+              <h3 className="text-xl font-bold mt-6 mb-2">Proyek Name 6</h3>
+              <p className="text-base/loose">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                itaque porro? Saepe possimus quo neque!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* GET IN TOUCH SECTION */}
+        <div className="contact pt-10" id="kontak">
+          <div className="kontak-box">
+            <div
+              className="about grid md:grid-cols-2 grid-cols-1 items-center md:gap-20 gap-10 pt-32 md:pt-20"
+              id="about"
+            >
+              <div className="box order-2">
+                <img
+                  src={ContactImage}
+                  alt="Contact Image"
+                  className="md:w-[600px] w-[500px] mx-auto"
+                />
+              </div>
+              <div className="box order-1">
+                <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7 group">
+                  <span className="text-sky-400 font-bold">Get</span> in{" "}
+                  <span className="text-sky-400 font-bold">touch</span>
+                  <div className="w-16 h-[2px] bg-black mt-2 transition-all duration-300 group-hover:w-1/2"></div>
+                </h1>
+                {/* form */}
+                <div className="mt-10 md:w-full md:max-w-md">
+                  <form className="space-y-6" action="#" method="POST">
+                    <input
+                      type="text"
+                      name="full-name"
+                      id="full-name"
+                      placeholder="Full name"
+                      autocomplete="full-name"
+                      required
+                      className="block mt-2 w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                    ></input>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email address"
+                      autocomplete="email"
+                      required
+                      className="block mt-2 w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                    ></input>
+                    <textarea
+                      type="text"
+                      name="message"
+                      id="message"
+                      placeholder="Message"
+                      autocomplete="message"
+                      rows={5}
+                      required
+                      className="block mt-2 w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                    />
+
+                    <a
+                      href="#"
+                      className="bg-sky-400 w-full justify-center hover:bg-sky-500 text-white py-3 px-4 inline-flex items-center rounded-full shadow-md transition-all"
+                    >
+                      Submit <i className="ri-arrow-right-up-line ms-1"></i>
+                    </a>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>

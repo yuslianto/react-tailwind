@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (window.scrollY > 5) {
         // console.log('scroll', scroll);
         setScroll(true);
@@ -20,9 +20,9 @@ const Navbar = () => {
     });
   });
 
-  let scrollActive = scroll ? 'py-6 bg-white/70 shadow' : 'py-4';
+  let scrollActive = scroll ? "py-6 bg-white/70 shadow" : "py-4";
 
-  let menuActive = show ? 'left-0' : '-left-full';
+  let menuActive = show ? "left-0" : "-left-full";
   return (
     <div className={`navbar fixed w-full transition-all ${scrollActive}`}>
       <div className="container mx-auto px-4">
@@ -59,7 +59,7 @@ const Navbar = () => {
             </li>
             <li className="flex items-center gap-3 md:hover:text-sky-400">
               <i className="ri-contacts-book-2-line text-3xl md:hidden block"></i>
-              <a href="#social-link" className="font-medium opacity-75">
+              <a href="#kontak" className="font-medium opacity-75">
                 Kontak
               </a>
             </li>
